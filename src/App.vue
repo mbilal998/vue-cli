@@ -4,12 +4,17 @@
     <input type="text" ref="name" />
     <button @click="handleClick()">Click</button>
   </div>
+  <Modal />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue"
+import Modal from "./components/Modal"
 
 export default {
+  name: "App",
+  components: {
+    Modal,
+  },
   data() {
     return {
       title: "My First Vue App :)",
